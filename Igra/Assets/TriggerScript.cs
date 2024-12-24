@@ -31,8 +31,8 @@ public class TriggerScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            //anim = GetComponent<Animation>();
-            anim.SetBool("Dveri", true);
+            anim = GetComponent<Animator>();
+            anim.SetBool("dveri", true);
         }
         flag = true;
         print (flag);
