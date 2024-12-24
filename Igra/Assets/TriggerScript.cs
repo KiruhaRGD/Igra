@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TriggerScript : MonoBehaviour
 {   
-    public Animation anim;
+    public Animator anim;
     Boolean flag = false;
     //[SerializeField] GameObject obj;
     [SerializeField] GameObject text;
@@ -31,9 +31,8 @@ public class TriggerScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            anim = GetComponent<Animation>();
-            anim.Play("dver");
-            anim.Play("dver1");
+            //anim = GetComponent<Animation>();
+            anim.SetBool("Dveri", true);
         }
         flag = true;
         print (flag);
